@@ -1,5 +1,6 @@
 from .extra import install_module
 from .extensions import NewelleExtension
+import re
 
 class ArchWikiExtension(NewelleExtension):
     id = "archwiki"
@@ -41,4 +42,18 @@ class ArchWikiExtension(NewelleExtension):
             return "Error contacting Arch API"
         # Convert the HTML in Markdown in order to make it more readable for the LLM
         html = r.json()["parse"]["text"]["*"]
-        return markdownify.markdownify(html)
+        return self.clean(markdownify.markdownify(html))
+
+    @staticmethod
+    def clean(text):
+        # Remove urls
+        text = re.sub(r'https?://\S+', '', text) 
+        # Remove HTML
+        text = re.sub(r'<[^>]*>', '', text)  
+        # Remove empty lines
+        text = re.sub(r'\n\s*\n', '\n', text)
+        # Change title format
+        text = re.sub(r'==([^=]+)==', r'\n\1\n', text)
+        # Change subtitle format
+        text = re.sub(r'===(.+?)===', r'\n\1\n', text)
+        return text 
