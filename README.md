@@ -10,7 +10,7 @@ Example of extension using `OpenAIHandler`. It adds the Hyperbolix.xyz support t
 
 [Extension file](https://github.com/FrancescoCaracciolo/NewelleExtensions/blob/main/extensions/hyperbolic.py)
 ## Pollinations Image Generator
-Example of an extension that replaces codeblocks with GTK widgets. It uses pollinations.ai to generate images.
+Example of an extension that replaces codeblocks with GTK widgets with settings and custom dependencies support. It uses pollinations.ai to generate images.
 
 [Extension file](https://github.com/FrancescoCaracciolo/NewelleExtensions/blob/main/extensions/pollinations.py)
 
