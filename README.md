@@ -1,5 +1,11 @@
 # NewelleExtensions
 Colection of my Newelle Extensions. You can find the files in the extensions folder.
+
+## Latex
+Example of an extension that replaces codeblocks with GTK widgets with settings and custom dependencies support.
+
+[Extension file](https://github.com/FrancescoCaracciolo/NewelleExtensions/blob/main/extensions/tex.py)
+
 ## DuckDuckGo
 Example of extension using `G4FHanlder`. It adds the DuckDuckGo AI Chat to Newelle.
 
