@@ -25,22 +25,4 @@ class HyperbolicHandler(OpenAIHandler):
         self.set_setting("advanced_params", False)
 
     def get_extra_settings(self) -> list:
-        plus = [
-            {
-                "key": "api",
-                "title": _("API Key"),
-                "description": _("API Key for Hyperbolic"),
-                "type": "entry",
-                "default": ""
-            },
-            {
-                "key": "model",
-                "title": _("Hyperbolic Model"),
-                "description": _("Name of the Hyperbolic Model"),
-                "type": "entry",
-                "default": "meta-llama/Meta-Llama-3.1-70B-Instruct",
-                "website": "https://app.hyperbolic.xyz/models",
-            }, 
-        ]
-        plus += [super().get_extra_settings()[3]]
-        return plus
+        return self.build_extra_settings("ClashAI", True, True, False, True, True, None, None, False, True)
