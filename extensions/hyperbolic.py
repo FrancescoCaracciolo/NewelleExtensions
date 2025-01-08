@@ -25,4 +25,4 @@ class HyperbolicHandler(OpenAIHandler):
         self.set_setting("advanced_params", False)
 
     def get_extra_settings(self) -> list:
-        return self.build_extra_settings("ClashAI", True, True, False, True, True, None, None, False, True)
+        return self.build_extra_settings("Hyperbolic", True, True, False, True, True, None, None, False, True)
