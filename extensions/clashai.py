@@ -1,6 +1,5 @@
 from .extensions import NewelleExtension
-from .llm import OpenAIHandler
-import requests
+from .handlers.llm import OpenAIHandler
 from gi.repository import GdkPixbuf, Gtk
 
 class ClashAIExtension(NewelleExtension):

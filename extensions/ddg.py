@@ -1,5 +1,5 @@
 from .extensions import NewelleExtension
-from .llm import G4FHandler
+from .handlers.llm import G4FHandler
 
 
 class DDGExtension(NewelleExtension):

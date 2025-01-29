@@ -1,4 +1,4 @@
-from .extra import install_module
+from .utility.pip import install_module
 from .extensions import NewelleExtension
 import re
 

@@ -1,6 +1,6 @@
 from .extensions import NewelleExtension
 from gi.repository import GdkPixbuf, Gtk
-from .extra import quote_string
+from .utility.strings import quote_string
 import subprocess, os
 import json
 
