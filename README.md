@@ -1,11 +1,6 @@
 # NewelleExtensions
 Colection of my Newelle Extensions. You can find the files in the extensions folder.
 
-## Latex
-Example of an extension that replaces codeblocks with GTK widgets with settings and custom dependencies support.
-
-[Extension file](https://github.com/FrancescoCaracciolo/NewelleExtensions/blob/main/extensions/tex.py)
-
 ## DuckDuckGo
 Example of extension using `G4FHanlder`. It adds the DuckDuckGo AI Chat to Newelle.
 
@@ -30,3 +25,11 @@ Example of an extension that replaces codeblocks with GTK widgets. It uses perch
 Example of an extension that replace codeblocks with responses to give to the LLM. It allows the model to search for Arch Wiki pages.
 
 [Extension file](https://github.com/FrancescoCaracciolo/NewelleExtensions/blob/main/extensions/arch.py)
+
+
+## Latex
+This is a legacy extension. LaTex support has been implemented in Newelle.
+
+Example of an extension that replaces codeblocks with GTK widgets with settings and custom dependencies support.
+
+[Extension file](https://github.com/FrancescoCaracciolo/NewelleExtensions/blob/main/extensions/tex.py)
