@@ -1,5 +1,5 @@
 from .extensions import NewelleExtension
-from .llm import OpenAIHandler
+from .handlers.llm import OpenAIHandler
 
 
 class HyperbolicExtension(NewelleExtension):

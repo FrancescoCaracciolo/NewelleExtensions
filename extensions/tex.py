@@ -1,6 +1,6 @@
 from gi.repository import Gio, Gtk
 from .extensions import NewelleExtension
-from .extra import find_module, install_module
+from .utility.pip import find_module, install_module
 import json
 import os
 
