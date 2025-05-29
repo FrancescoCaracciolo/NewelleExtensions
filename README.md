@@ -1,7 +1,7 @@
 # NewelleExtensions
 Colection of my Newelle Extensions. You can find the files in the extensions folder.
 
-## DuckDuckGo
+## DuckDuckGo [Deprecated]
 Example of extension using `G4FHanlder`. It adds the DuckDuckGo AI Chat to Newelle.
 
 [Extension file](https://github.com/FrancescoCaracciolo/NewelleExtensions/blob/main/extensions/ddg.py)
