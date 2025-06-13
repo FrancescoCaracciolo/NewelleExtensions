@@ -1,5 +1,5 @@
 # NewelleExtensions
-Colection of my Newelle Extensions. You can find the files in the extensions folder.
+Collection of my Newelle Extensions. You can find the files in the extensions folder.
 
 ## DuckDuckGo [Deprecated]
 Example of extension using `G4FHanlder`. It adds the DuckDuckGo AI Chat to Newelle.
