@@ -5,7 +5,7 @@ class PollinationsExtension(NewelleExtension):
     name = "Pollinations Image Generator"
     id = "pollinationsimg"
     def get_replace_codeblocks_langs(self) -> list:
-        return ["generate-image"]
+        return ["generateimage"]
 
     def get_additional_prompts(self) -> list:
         return [
@@ -17,7 +17,7 @@ class PollinationsExtension(NewelleExtension):
                 "editable": True,
                 "show_in_settings": True,
                 "default": True,
-                "text": "You can generate images using: \n```generate-image\nprompt\n```. Use detailed prompts, with words separated by commas",
+                "text": "- To generate images use: \n```generateimage\nprompt\n```\nUse detailed prompts, with words separated by commas",
             }
         ]
 
