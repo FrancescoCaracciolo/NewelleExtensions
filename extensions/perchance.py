@@ -65,19 +65,19 @@ class PerchanceExtension(NewelleExtension):
             subprocess.Popen(["flatpak-spawn", "--host", "bash", "-c", bash_script])     
 
     def get_replace_codeblocks_langs(self) -> list:
-        return ["generate-image"]
+        return ["generateimage"]
 
     def get_additional_prompts(self) -> list:
         return [
             {
-                "key": "generate-image",
-                "setting_name": "generate-image",
+                "key": "generateimage",
+                "setting_name": "generateimage",
                 "title": "Generate Image",
                 "description": "Generate images using Perchance AI",
                 "editable": True,
                 "show_in_settings": True,
                 "default": True,
-                "text": "You can generate images using: \n```generate-image\nprompt\n```. Use detailed prompts, with words separated by commas",
+                "text": "- To generate images use: \n```generateimage\nprompt\n```. Use detailed prompts, with words separated by commas",
             }
         ]
 
