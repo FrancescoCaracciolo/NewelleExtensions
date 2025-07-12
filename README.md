@@ -1,15 +1,21 @@
 # NewelleExtensions
 Collection of my Newelle Extensions. You can find the files in the extensions folder.
 
+## Hyperbolic
+Example of extension using `OpenAIHandler`. It adds the Hyperbolix.xyz support to Newelle.
+
+[Extension file](https://github.com/FrancescoCaracciolo/NewelleExtensions/blob/main/extensions/hyperbolic.py)
+
 ## DuckDuckGo [Deprecated]
 Example of extension using `G4FHanlder`. It adds the DuckDuckGo AI Chat to Newelle.
 
 [Extension file](https://github.com/FrancescoCaracciolo/NewelleExtensions/blob/main/extensions/ddg.py)
 
-## Hyperbolic
-Example of extension using `OpenAIHandler`. It adds the Hyperbolix.xyz support to Newelle.
+## TTS Speaker 
+Example of Newelle mini-app. It allows you to use Newelle integrated TTS to read custom text.
 
-[Extension file](https://github.com/FrancescoCaracciolo/NewelleExtensions/blob/main/extensions/hyperbolic.py)
+[Extension file](https://github.com/FrancescoCaracciolo/NewelleExtensions/blob/main/extensions/tts_speaker.py)
+
 ## Pollinations Image Generator
 Example of an extension that replaces codeblocks with GTK widgets with settings and custom dependencies support. It uses pollinations.ai to generate images.
 
