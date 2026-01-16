@@ -7,12 +7,22 @@ import urllib.parse
 import urllib.error
 import re
 
+ARCH_PROMPT = """{COND:
+[search_arch_wiki] When a user asks for information about Arch Linux, such as installation guides, configuration steps, or troubleshooting, you should prioritize searching the Arch Wiki using the `search_arch_wiki` tool. 
+}
+{COND:
+[get_wiki_page] Once you find a relevant page, use `get_wiki_page` to fetch the detailed information. 
+}
+{COND:
+[get_official_package_info or search_aur] For questions about specific software packages available in the Arch repositories or the AUR, use `get_official_package_info` or `search_aur` to provide accurate package details.
+}
+"""
 
 
 class ArchLinuxExtension(NewelleExtension):
     id = "arch_linux"
     name = "Arch Linux Tools"
-    
+        
     WIKI_API_URL = "https://wiki.archlinux.org/api.php"
     DEFAULT_TIMEOUT = 15
 
@@ -266,7 +276,7 @@ class ArchLinuxExtension(NewelleExtension):
                 "editable": True,
                 "show_in_settings": True,
                 "default": True,
-                "text": "When a user asks for information about Arch Linux, such as installation guides, configuration steps, or troubleshooting, you should prioritize searching the Arch Wiki using the `search_arch_wiki` tool. Once you find a relevant page, use `get_wiki_page` to fetch the detailed information. For questions about specific software packages available in the Arch repositories or the AUR, use `get_official_package_info` or `search_aur` to provide accurate package details."
+                "text": ARCH_PROMPT, 
             }
         ]
     
