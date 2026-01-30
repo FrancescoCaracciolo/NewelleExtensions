@@ -6,10 +6,10 @@ Example of extension using `OpenAIHandler`. It adds the Hyperbolix.xyz support t
 
 [Extension file](https://github.com/FrancescoCaracciolo/NewelleExtensions/blob/main/extensions/hyperbolic.py)
 
-## DuckDuckGo [Deprecated]
-Example of extension using `G4FHanlder`. It adds the DuckDuckGo AI Chat to Newelle.
+## PromptAdder
+Extension that enables the user to add some custom prompts with custom names.
 
-[Extension file](https://github.com/FrancescoCaracciolo/NewelleExtensions/blob/main/extensions/ddg.py)
+[Extension file](https://github.com/FrancescoCaracciolo/NewelleExtensions/blob/main/extensions/prompt_adder.py)
 
 ## Youtube Transcriptions
 Add a tool to read youtube transcription from llm.
