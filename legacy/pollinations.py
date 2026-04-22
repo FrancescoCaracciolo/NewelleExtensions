@@ -1,5 +1,6 @@
 from .extensions import NewelleExtension
 from gi.repository import GdkPixbuf, Gtk
+from .ui import load_image_with_callback 
 
 class PollinationsExtension(NewelleExtension):
     name = "Pollinations Image Generator"
@@ -46,17 +47,9 @@ class PollinationsExtension(NewelleExtension):
         import urllib.request
         import urllib.parse
         # Create a pixbuf loader that will load the image
-        pixbuf_loader = GdkPixbuf.PixbufLoader()
-        pixbuf_loader.connect("area-prepared", self.on_area_prepared, spinner, image, box)
-        # Generate the image and write it to the pixbuf loader
-        try:
-            url = "https://image.pollinations.ai/prompt/" + urllib.parse.quote(codeblock)
-            with urllib.request.urlopen(url) as response:
-                data = response.read()
-                pixbuf_loader.write(data)
-                pixbuf_loader.close()
-        except Exception as e:
-            print("Exception generating the image: " + str(e))
+        url = "https://image.pollinations.ai/prompt/" + urllib.parse.quote(codeblock)
+        print(url)
+        load_image_with_callback(url, lambda pixbufloader : self.on_area_prepared(pixbufloader, spinner, image, box))
 
     def on_area_prepared(self, loader: GdkPixbuf.PixbufLoader, spinner: Gtk.Spinner, image: Gtk.Image, box: Gtk.Box):
         # Function runs when the image loaded. Remove the spinner and open the image
